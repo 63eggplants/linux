@@ -6,7 +6,7 @@ print_try(){
 }
 
 print_help(){
-    echo "usge: stop <nginx> or <mysql>"
+    echo "usge: stop { nginx | mysql }"
     exit 1 
 }
 

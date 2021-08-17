@@ -6,7 +6,7 @@ print_try(){
 }
 
 print_help(){
-    echo "usge: restart <nginx> or <mysql>"
+    echo "usge: restart { nginx | mysql }"
     exit 1
 }
 
