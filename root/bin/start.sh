@@ -10,11 +10,16 @@ print_help(){
     exit 1 
 }
 
+if [ $# -ne 1 ]; then
+    print_try
+    exit 1
+fi
+
 case $1 in 
     mysql)
-        `systemctl start mysqld`;;
+        `/usr/bin/systemctl start mysqld`;;
     nginx)
-        `systemctl start nginx`;;
+        `/usr/bin/systemctl start nginx`;;
     -h)
         print_help;;
     *)
